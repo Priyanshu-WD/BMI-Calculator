@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <title>BMI || Calculator</title>
+  </head>
+  <body class="bg-[#111111] grid place-content-center h-screen">
+    <main>
+      <div class="flex flex-col gap-10">
+        <div class="text-center">
+          <h1 class="text-4xl font-semibold text-cyan-300 drop-shadow-2xl">BMI Calculator</h1>
+
+        </div>
+
+        <form action="#" class="p-5 bg-indigo-400 flex flex-col max-w-xl rounded shadow-lg shadow-red-500/40">
+          <p>
+            <label class="text-xl font-semibold" for="height "></label >Height in CM:<input
+              class="w-full h-10 rounded focus:outline-none"
+              type="text"
+              name="height"
+              id="height"
+            />
+          </p>
+          <span id="h-error" class="mb-8 text-red-600 font-semibold"></span>
+          <p>
+            <label class="text-xl font-semibold" for="weight"></label>Weight in KG:<input
+              class="w-full rounded h-10"
+              type="text"
+              name="weight"
+              id="weight"
+            />
+          </p>
+          <span id="w-error" class="text-red-600 font-semibold mb-8"></span>
+          <div class="text-center font-semibold text-3xl mb-5">
+            <p id="result"></p>
+          </div>
+        
+          <button type="submit" class="p-2 bg-[#90EE90] text-2xl font-semibold rounded-lg tracking-wide ">Calculate</button>
+        </form>
+        \0
+      </div>
+    </main>
+    <script src="/JS/script.js"></script>
+  </body>
+</html>
